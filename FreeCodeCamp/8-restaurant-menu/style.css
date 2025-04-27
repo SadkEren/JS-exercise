@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    font-family: "Montserrat";
+}
+body{
+    font-size: 1.6rem;
+    letter-spacing: .3rem;
+}
+
+.container .content .card img {
+    width: 18rem;
+    height: 12rem;
+    object-fit: cover;
+    border: 3px solid rgb(207, 179, 139);
+    border-radius: 0.6rem;
+}
+
+
+.container{
+    max-width: 125rem;
+    margin: 0 auto;
+}
+
+.container .title{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+.container .title h1{
+    padding: 1rem;
+}
+
+.container .title hr{
+    width: 5%;
+    height: 3px;
+    background-color: rgb(207, 179, 139);
+    border: 1px solid rgb(207, 179, 139);
+    margin: 0 auto;
+}
+
+.container .category{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.container .category button{
+    cursor: pointer;
+    border-radius: .6rem;
+    border: 1px solid rgb(207, 179, 139);
+    color:rgb(207, 179, 139);
+    margin: 1rem;
+    padding: .7rem 2rem;
+}
+
+.container .category button:hover{
+    color: white;
+    background-color: rgb(207, 179, 139);
+}
+
+
+.container .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.container .content .card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+
+.container .content .card .cardBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container .content .card .cardBody .cardBody-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 179, 139);
+    padding-bottom: 0.5rem;
+}
+
+.container .content .card .cardBody .cardBody-item span{
+    color: rgb(207, 179, 139);
+}

@@ -1,0 +1,57 @@
+*{
+    font-family: sans-serif;
+}
+
+.container
+{
+    width: 1000px;
+    margin: auto;
+}
+
+.card{
+    display: block;
+}
+
+.card .card-header{
+    padding: 20px;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+.card .card-body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 10px;
+}
+
+.card .card-body .card-body_item{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.card .card-body .card-body_item:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.card .card-body .card-body_item:active{
+    background-color: rgb(88, 88, 88);
+    color: white;
+    scale: .97;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between; /* Butonları en sola ve en sağa it */
+}
+
+.card-footer .card-footer_item {
+    width: 10%;
+    margin: 0; /* Gereksiz marginleri kaldır */
+    padding: 10px 20px; /* Butonları daha rahat hale getir */
+}

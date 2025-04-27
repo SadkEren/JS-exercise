@@ -1,0 +1,28 @@
+.container
+{
+    width: 1000px;
+    margin: auto;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.card-header input{
+    width: 100%;
+    font-size: 100px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+}
+
+.card button{
+    font-size: 40px;
+    margin: 5px;
+}

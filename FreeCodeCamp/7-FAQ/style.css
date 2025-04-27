@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    font-family: "Montserrat";
+
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    margin: 10rem auto;
+    max-width: 125rem;
+    height: 100vh;
+    text-align: center;
+}
+.container .title{
+    margin-bottom: 3rem;
+
+}
+.container .contents{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.container .contents .card{
+    display: grid;
+    grid-template-columns: 2fr auto;
+    justify-content: space-around;
+    align-items: left;
+    padding: 3rem;
+    width: 65%;
+    margin: 3rem;
+    text-align: left;
+    font-size: 2rem;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.container .contents .card .card-content{
+    margin: 1rem 0;
+}
+.container .contents .card .cardContent{
+    display: none;
+}
+.container .contents .card .cardContent.active{
+    display: block;
+}
+
+
+button{
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: white;
+    color: burlywood;
+    border: 3px solid burlywood;
+    cursor: pointer;
+    transition: .1s;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+button:active{
+    scale: 1;
+
+}
+
+.fa-plus.active{
+    display: none;
+}
+
+.fa-minus.active{
+    display: none;
+}

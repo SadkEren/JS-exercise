@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>BG - Video</title>
+</head>
+<body>
+
+    <div class="preloader">
+        <img src="preloader.gif" alt="preloader" class="preloader__item" />
+    </div>
+
+
+    <video autoplay muted loop id="myVideo" width="100%" height="100%">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <button class="pauseBTN">Pause</button>
+
+
+
+<script>
+
+    const btn = document.querySelector('.pauseBTN')
+    const video = document.querySelector('#myVideo')
+
+    btn.addEventListener('click', ()=>{
+        if(!btn.classList.contains('active')){
+            btn.classList.add('active');
+            video.pause();
+        }else{
+            btn.classList.remove('active');
+            video.play();
+        }
+
+
+    })
+    const preloader = document.querySelector(".preloader");
+
+    window.addEventListener('load', ()=>{
+        preloader.classList.add('hide-preloader')
+    })
+
+
+</script>
+
+</body>
+</html>

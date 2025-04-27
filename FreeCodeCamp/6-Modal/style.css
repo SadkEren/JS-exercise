@@ -1,0 +1,149 @@
+*{
+    font-family: "Special Gothic Expanded One";
+    font-weight: 400;
+    font-style: normal;
+
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.5px;
+    color: black;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+
+ul li{
+    list-style-type: none;
+
+    /* Burasi burda olmasa daha iyi */
+        padding-top: 3rem;
+    /* End */
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+button{
+    /* Icon arkaplan silme */
+    background-color: white;
+    mix-blend-mode:multiply;
+    /* End  */
+
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+button:active{
+    scale: 0.9;
+}
+
+.container{
+    margin: 2rem auto;
+    max-width: 125rem;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar button{
+    cursor: pointer;
+    border: none;
+    font-size: 3rem;
+    transition: .1s;
+}
+
+.navbar button:hover{
+    scale: 1.1;
+}
+
+.navbar button:active{
+    scale: .9;
+}
+
+.sidebar{
+    padding: 1rem 1rem 100vh 1rem;
+    position: fixed;
+    top: 1px;
+    background-color: white;
+    width: 40rem;
+    display: none;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.sidebar.active{
+    display: block;
+}
+
+.sidebar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.sidebar .sidebar-content{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sidebar .sidebar-contents .sidebar-content:hover{
+    scale: 1.1;
+    transition: .2s;
+}
+
+.modal{
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 5rem;
+    margin-top: 4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.openModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    display: grid;
+    place-items: center;
+
+    background-color: rgba(255, 255, 255, 0.558);
+    color: aqua;
+}
+
+.openModal.active{
+    visibility: visible;
+}
+
+.openModal .openModal_content{
+    background-color: rgb(204, 204, 204);
+    padding: 10rem 4rem 10rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 30%;
+}
+

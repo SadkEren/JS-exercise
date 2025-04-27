@@ -1,0 +1,30 @@
+@media screen and (max-width: 992px) {
+    #nav-tab{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+
+    .toggleMenu {
+        display: none;
+        padding: 1rem;
+    }
+
+    .toggleMenu.active {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #bars{
+        display: none;
+    }
+    .toggleMenu {
+        display: none !important;
+    }
+}
+
+#toggleMenu{
+    background-color: rgb(231, 231, 231);
+}

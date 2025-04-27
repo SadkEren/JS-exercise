@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sidebar - Modals</title>
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar" >
+            <div class="navbar-l">
+                <h2>Coding HTML/JS</h2>
+            </div>
+            <div class="navbar-r">
+                <button id="barsBTN">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </nav>
+
+       
+
+        <div class="modal" style="text-align: center;" >
+            <button class="btn-modal" style="border: 3px;">
+                <h2 style="border: 1px;">Open Modal</h2>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="openModal">
+        <div class="openModal_content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet, quas omnis, suscipit, animi cupiditate fuga non reiciendis blanditiis esse enim aut corrupti nobis?</p>
+            <button id="xCorssBTN2">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+    </div>
+
+    
+
+<!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-title">
+            <h2>Coding HTML/JS</h2>
+
+            <button id="xCorssBTN">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <div class="sidebar-body">
+            <ul class="sidebar-contents">
+                <li class="sidebar-content">
+                    <a href="#">
+                        <h3>Home</h3>
+                    </a>
+                </li>
+
+                <li class="sidebar-content">
+                    <a href="#">
+                        <h3>About Me</h3>
+                    </a>
+                </li>
+
+                <li class="sidebar-content">
+                    <a href="#">
+                        <h3>Contact</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- SidebarEND -->
+
+    <script src="app.js" ></script>
+</body>
+</html>

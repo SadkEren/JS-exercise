@@ -1,0 +1,79 @@
+*{
+    font-family: sans-serif;
+}
+
+button{
+    background-color: white;
+    border: 1px solid black;
+    transition: .15s;
+}
+
+button:hover{
+    background-color: rgb(90, 27, 27) ;
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+button:active{
+    scale: .9;
+
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+.container .screen{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 50px;
+}
+
+.container .screen-item{
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.container .screen-item input:last-child{
+    text-align: center;
+}
+
+.guess .words{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.guess .words .word-item{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.guess .send-btn{
+    text-align: center;
+}
+
+.guess .send-btn button{
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
+.guess .send-btn input{
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    width: 20px;
+    text-align: center;
+}
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="screen">
+            <input id="screenWord" class="screen-item" type="text"   readonly  value="">
+            <!-- Bunuda js de yazacaz buralari -->
+            <input id="screenWordLenght" class="screen-item" type="number" readonly  value=''>
+            <!-- Value kelimenin dizisinin lenght i kadar -->
+        </div>
+
+        <div class="guess">
+            <div class="words">
+                <button onclick="takeLetter('A')" class="word-item">A</button>
+                <button onclick="takeLetter('B')" class="word-item">B</button>
+                <button onclick="takeLetter('C')" class="word-item">C</button>
+                <button onclick="takeLetter('D')" class="word-item">D</button>
+                <button onclick="takeLetter('E')" class="word-item">E</button>
+                <button onclick="takeLetter('F')" class="word-item">F</button>
+                <button onclick="takeLetter('G')" class="word-item">G</button>
+                <button onclick="takeLetter('H')" class="word-item">H</button>
+                <button onclick="takeLetter('I')" class="word-item">I</button>
+                <button onclick="takeLetter('J')" class="word-item">J</button>
+                <button onclick="takeLetter('K')" class="word-item">K</button>
+                <button onclick="takeLetter('L')" class="word-item">L</button>
+                <button onclick="takeLetter('M')" class="word-item">M</button>
+                <button onclick="takeLetter('N')" class="word-item">N</button>
+                <button onclick="takeLetter('O')" class="word-item">O</button>
+                <button onclick="takeLetter('P')" class="word-item">P</button>
+                <button onclick="takeLetter('R')" class="word-item">R</button>
+                <button onclick="takeLetter('S')" class="word-item">S</button>
+                <button onclick="takeLetter('T')" class="word-item">T</button>
+                <button onclick="takeLetter('U')" class="word-item">U</button>
+                <button onclick="takeLetter('V')" class="word-item">V</button>
+                <button onclick="takeLetter('Y')" class="word-item">Y</button>
+                <button onclick="takeLetter('Z')" class="word-item">Z</button>
+               
+            </div>
+
+            <div class="send-btn">
+                <button onclick="NewRandomWord()">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+                <input id="showLetter" type="text" readonly  value="">
+                <!-- Secilen burada belirtilsin -->
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
